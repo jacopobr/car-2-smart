@@ -1,0 +1,7 @@
+{
+    "broker": "broker.mqttdashboard.com",
+    "port": 1883,
+    "baseTopic": "IoT_project",
+    "ledTopic":"",
+    "messageTemplate":{}
+}

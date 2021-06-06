@@ -1,0 +1,132 @@
+{
+    "smart2safe": [
+        {
+            "broker": {
+                "broker": "broker.mqttdashboard.com",
+                "port": 1883
+            }
+        },
+        {
+            "bot": {
+                "_comment": "host and port where to do a POST for the bot",
+                "postAlcoholTest": "87b307e0290a.ngrok.io",
+                "port": 80
+            }
+        },
+        {
+            "th_alc": {
+                "thresholds_alcohol": {
+                    "alcohol_test_2000": [
+                        0.5,
+                        0.8
+                    ],
+                    "alcohol_test_3200": [
+                        0.8,
+                        1.5
+                    ],
+                    "alcohol_test_6000": [
+                        1.5
+                    ]
+                }
+            }
+        },
+        {
+            "ac": {
+                "max_deltaT": 6,
+                "heating": {
+                    "max_temp": 25,
+                    "min_temp": 10
+                },
+                "cooling": {
+                    "max_temp": 28,
+                    "min_temp": 24
+                }
+            }
+        },
+        {
+            "cars": [
+                {
+                    "plate": "AX1245531",
+                    "available": true,
+                    "devices": {
+                        "rpi": [],
+                        "arduino": []
+                    }
+                },
+                {
+                    "plate": "FCS277683",
+                    "available": true,
+                    "devices": {
+                        "rpi": [],
+                        "arduino": []
+                    }
+                },
+                {
+                    "plate": "MMS274926",
+                    "available": true,
+                    "devices": {
+                        "rpi": [],
+                        "arduino": []
+                    }
+                },
+                {
+                    "plate": "SDL279897",
+                    "available": true,
+                    "devices": {
+                        "rpi": [],
+                        "arduino": []
+                    }
+                },
+                {
+                    "plate": "JBS27399",
+                    "available": true,
+                    "devices": {
+                        "rpi": [],
+                        "arduino": []
+                    }
+                },
+                {
+                    "plate": "AX1986473",
+                    "available": true,
+                    "devices": {
+                        "rpi": [],
+                        "arduino": []
+                    }
+                },
+                {
+                    "plate": "AX6786548",
+                    "available": true,
+                    "devices": {
+                        "rpi": [],
+                        "arduino": []
+                    }
+                },
+                {
+                    "plate": "AX3249466",
+                    "available": true,
+                    "devices": {
+                        "rpi": [],
+                        "arduino": []
+                    }
+                },
+                {
+                    "plate": "AX9834672",
+                    "available": true,
+                    "devices": {
+                        "rpi": [],
+                        "arduino": []
+                    }
+                },
+                {
+                    "plate": "AX4691037",
+                    "available": true,
+                    "devices": {
+                        "rpi": [],
+                        "arduino": []
+                    }
+                }
+            ]
+        }
+    ],
+    "lastUpdate": "2021/06/05 23:06:16"
+}

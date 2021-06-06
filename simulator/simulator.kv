@@ -1,0 +1,123 @@
+ScreenManager:
+    LoginScreen:
+    CarListScreen:
+    RegisterScreen:
+
+<LoginScreen>
+    name: 'login'
+    MDLabel
+        text: "Car2Safe"
+        font_style: "H3"
+        halign: "center"
+        pos_hint: {'center_x':0.5,'center_y':0.9}
+
+    MDTextField:
+        id: email
+        hint_text: 'Email'
+        required: True
+        size_hint_x: None
+        width: 300
+        pos_hint:{'center_x':0.5, 'center_y':0.7}
+        color_mode: 'custom'
+        line_color_focus: (0,0,0,1)
+        write_tab: False
+    
+    MDTextField:
+        id: password
+        hint_text: 'Password'
+        password: True
+        size_hint_x: None
+        width: 300
+        pos_hint:{'center_x':0.5, 'center_y':0.6}
+        color_mode: 'custom'
+        line_color_focus: (0,0,0,1)
+        write_tab: False
+        
+    MDRaisedButton:
+        text: 'Login'
+        pos_hint:{'center_x':0.5, 'center_y':0.4}
+        width: 150
+        on_press: root.login()
+
+    MDLabel:
+        text: "Not a user? Click here!"
+        font_style: "Caption"
+        halign: "center"
+        pos_hint: {'center_x':0.5,'center_y':0.2}
+
+    MDRaisedButton:
+        text: 'Register'
+        pos_hint:{'center_x':0.5, 'center_y':0.15}
+        width: 150
+        on_press: root.manager.current = 'register'
+
+<RegisterScreen>
+    name: 'register'
+    MDLabel
+        text: "Register"
+        font_style: "H4"
+        halign: "center"
+        pos_hint: {'center_x':0.5,'center_y':0.9}
+
+    MDTextField:
+        id: email
+        hint_text: 'Email'
+        required: True
+        size_hint_x: None
+        width: 300
+        pos_hint:{'center_x':0.5, 'center_y':0.8}
+        color_mode: 'custom'
+        line_color_focus: (0,0,0,1)
+        write_tab: False
+    
+    MDTextField:
+        id: telegram
+        hint_text: 'Telegram Username'
+        required: True
+        size_hint_x: None
+        width: 300
+        pos_hint:{'center_x':0.5, 'center_y':0.7}
+        color_mode: 'custom'
+        line_color_focus: (0,0,0,1)
+        write_tab: False
+    
+    MDTextField:
+        id: password
+        hint_text: 'Password'
+        password: True
+        size_hint_x: None
+        width: 300
+        pos_hint:{'center_x':0.5, 'center_y':0.6}
+        color_mode: 'custom'
+        line_color_focus: (0,0,0,1)
+        write_tab: False
+    
+    MDTextField:
+        id: password_two
+        hint_text: 'Confirm Password'
+        password: True
+        size_hint_x: None
+        width: 300
+        pos_hint:{'center_x':0.5, 'center_y':0.5}
+        color_mode: 'custom'
+        line_color_focus: (0,0,0,1)
+        write_tab: False
+        
+    MDRaisedButton:
+        text: 'Register'
+        pos_hint:{'center_x':0.5, 'center_y':0.4}
+        width: 150
+        on_press: root.register()
+
+<CarListScreen>
+    name: 'carlist'
+    BoxLayout:
+        orientation: 'vertical'
+        MDToolbar:
+            title: 'Available cars'
+            elevation:5
+
+        ScrollView:
+            MDList:
+                id: container
+
